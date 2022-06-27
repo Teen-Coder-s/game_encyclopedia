@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jun 27 16:18:16 2022
+
+@author: mmj-sys
+"""
+
+venv/
+*.pyc
+*.sqlite3
