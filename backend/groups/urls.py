@@ -20,6 +20,8 @@ from . import views
 urlpatterns = [
     path('list/', views.collection_list),
     path('events/<id>', views.get_events),
+    path('articles/<id>', views.get_articles),
+    path('article/<id>', views.get_article),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

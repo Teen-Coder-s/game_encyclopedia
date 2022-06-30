@@ -20,3 +20,10 @@ class Events(models.Model):
     event_at = models.DateTimeField()
     def __str__(self):
         return self.title
+class Articles(models.Model):
+    collection_id = models.IntegerField()
+    title = models.CharField(max_length=100)
+    description = models.TextField()
+    image = models.ImageField(upload_to='articles_images/', blank=True)
+    def __str__(self):
+        return self.title

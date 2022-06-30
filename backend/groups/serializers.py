@@ -36,3 +36,10 @@ class EventsSerializer(serializers.Serializer):
     description = serializers.CharField(max_length=None)
     image = serializers.ImageField(use_url='events_images/')
     event_at = serializers.DateTimeField()
+
+class ArticlesSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
+    collection_id = serializers.IntegerField()
+    title = serializers.CharField(required=True, max_length=100)
+    description = serializers.CharField(max_length=None)
+    image = serializers.ImageField(use_url='articles_images/')
