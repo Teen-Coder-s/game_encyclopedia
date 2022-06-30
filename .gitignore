@@ -8,3 +8,4 @@ Created on Mon Jun 27 16:18:16 2022
 venv/
 *.pyc
 *.sqlite3
+migrations/
