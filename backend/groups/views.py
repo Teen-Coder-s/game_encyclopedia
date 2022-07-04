@@ -25,3 +25,8 @@ def get_article(request,id):
     article =  Articles.objects.get(id=id)
     serializer = ArticlesSerializer(article)
     return Response(serializer.data)
+@api_view(['GET',])
+def get_facts(request,id):
+    facts =  Facts.objects.filter(collection_id=id)
+    serializer = FactsSerializer(facts, many=True)
+    return Response(serializer.data)

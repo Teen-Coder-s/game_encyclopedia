@@ -16,3 +16,7 @@ class ArticlesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Articles
         fields = '__all__'
+class FactsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Facts
+        fields = '__all__'

@@ -22,6 +22,7 @@ urlpatterns = [
     path('events/<id>', views.get_events),
     path('articles/<id>', views.get_articles),
     path('article/<id>', views.get_article),
+    path('facts/<id>', views.get_facts),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

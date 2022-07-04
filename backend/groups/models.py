@@ -27,3 +27,10 @@ class Articles(models.Model):
     image = models.ImageField(upload_to='articles_images/', blank=True)
     def __str__(self):
         return self.title
+class Facts(models.Model):
+    collection_id = models.IntegerField()
+    question = models.TextField()
+    answer = models.TextField()
+    vote_up = models.IntegerField()
+    def __str__(self):
+        return self.question
