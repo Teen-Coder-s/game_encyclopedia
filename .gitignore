@@ -173,3 +173,6 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 migrations
+
+
+node_modules
